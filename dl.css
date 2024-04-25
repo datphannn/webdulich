@@ -181,52 +181,67 @@
 .banner img {
     display: block;
 }
+/* CSS cho phần tour-main1 */
 .tour-main1 {
     margin-top: 50px;
     padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Căn giữa phần tour-main1 trên trang */
+    margin-left: 432px;
+    flex-wrap: wrap;
 }
 
-.top--tour.h2 {
-    color: #660066;
-    font-weight: 900;
+/* CSS cho phần list--tour1 của tour-main1 */
+.list--tour1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px 18px;
+    justify-content: space-between; /* Căn các item tour1 theo chiều ngang */
 }
 
-.item--tour1,
-.top--tour1 {
-    width: calc(33.3333% - 20px);
+/* CSS cho phần item--tour1 của tour-main1 */
+.item--tour1 {
+    width: 32%; /* Độ rộng của mỗi item tour1 */
     position: relative;
     overflow: hidden;
 }
 
-.item--tour1 img,
-.item-slider .img2 {
-    width: 100%;
-    height: auto;
+/* CSS cho hình ảnh của item--tour1 */
+.item--tour1 img {
+    max-width: 100%;
+    display: block;
     transition: transform 0.3s ease;
 }
 
-.item--tour1:hover img,
-.item-slider:hover .img2 {
+/* Hiệu ứng khi hover vào hình ảnh của item--tour1 */
+.item--tour1:hover img {
     transform: scale(1.1);
 }
 
+/* CSS cho nội dung của item--tour1 */
 .content--tour1 {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px 20px;
+    padding: 16px 30px;
     color: #fff;
     text-align: center;
     transition: bottom 0.3s ease;
 }
 
-.item--tour1:hover .content--tour1,
-.top--tour1:hover .content--tour1 {
+/* Hiệu ứng khi hover vào item--tour1 */
+.item--tour1:hover .content--tour1 {
     bottom: -50px;
+}
+.box-wp{
+    text-align: center;
+}
+.item--tour1 {
+    width: 30%; /* Độ rộng của mỗi item tour1 */
+    margin: 0 1.5%; /* Khoảng cách giữa các item */
+    display: inline-block; /* Hiển thị các item trên cùng một hàng */
+    vertical-align: top; /* Căn đỉnh của các item theo đỉnh của hàng */
 }
 
