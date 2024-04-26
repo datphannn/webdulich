@@ -192,7 +192,6 @@
     padding: 40px;
     display: flex;
     justify-content: center;
-    margin-left: 432px;
     flex-wrap: wrap;
 }
 
@@ -257,22 +256,40 @@
 }
 
 .why {
-    margin-top: 0px;
-    padding: 40px;
     display: flex;
     justify-content: center;
-    margin-left: 432px;
-    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 0;
+    flex-direction: column; /* Thêm chiều dọc */
 }
+
+.why-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Thêm chiều dọc */
+}
+
+.list-why {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.item-why {
+    width: 25%;
+    text-align: center;
+    margin: 20px 0; /* Thêm khoảng cách dưới cho các mục */
+}
+
 
 .why h2 {
     color: #660066;
     margin-bottom: 40px;
     font-weight: 900;
-}
-
-.list-why {
-    display: flex;
 }
 
 .item-why {
@@ -296,7 +313,8 @@
 }
 
 .news-main {
-    padding-bottom: 60px;
+    width: 80%; /* Điều chỉnh chiều rộng của phần "Cẩm nang du lịch" */
+    margin: 0 auto; /* Căn giữa theo chiều ngang */
 }
 
 .top--news {
@@ -385,4 +403,3 @@ section.why {
     max-height: 100px;
     margin-top: 10px;
 }
-
